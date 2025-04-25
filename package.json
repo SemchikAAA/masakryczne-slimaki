@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/team-18/",
+    "build": "vite build --base=/masakryczne-slimaki/",
     "preview": "vite preview"
   },
   "devDependencies": {
