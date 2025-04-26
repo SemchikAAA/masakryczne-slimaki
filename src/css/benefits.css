@@ -17,6 +17,7 @@
 .margin {
   margin-bottom: 16px;
 }
+
 @media (max-width: 768px) {
   h2 {
     margin-bottom: 40px;
@@ -46,5 +47,21 @@
   h2 {
     position: absolute;
     max-width: 700px;
+  }
+  .container {
+    position: relative;
+  }
+
+  .decor-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../img/background/desktop-decor-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 536px;
+    height: 408px;
+    margin-right: 32px;
+    margin-top: -116px;
   }
 }
