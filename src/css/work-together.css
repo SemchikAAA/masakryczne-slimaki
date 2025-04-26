@@ -17,6 +17,12 @@
   gap: 16px;
 }
 
+.wt_contact_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .wt_form {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .work-together {
+    position: relative;
+  }
+  .wt_decor-bg {
+    position: absolute;
+    top: -50px;
+    right: 32px;
+    width: 336px;
+    height: 260px;
+    background-image: url('../img/background/tablet-decor-bg-7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(4.7280731201171875px);
+  }
   .wt_content {
     margin-top: 60px;
   }
@@ -102,8 +125,14 @@
   }
 }
 
-/* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
+  .wt_decor-bg {
+    top: -120px;
+    right: 32px;
+    width: 526px;
+    height: 408px;
+    background-image: url('../img/background/desktop-decor-bg-3.png');
+  }
   .work-together h2 {
     max-width: 520px;
   }

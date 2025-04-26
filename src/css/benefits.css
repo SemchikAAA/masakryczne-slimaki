@@ -43,7 +43,7 @@
   .benefits-list li:first-child {
     grid-column: 3;
   }
-  h2 {
+  .benefits h2 {
     position: absolute;
     max-width: 700px;
   }
