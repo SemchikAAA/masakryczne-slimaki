@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
-  margin-bottom: 16px;
 }
 
 .benefits-list {
@@ -34,10 +33,6 @@
   .benefits-list li:first-child {
     grid-column: 2;
   }
-  h2 {
-    font-size: 108px;
-    line-height: 124px;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -51,5 +46,20 @@
   h2 {
     position: absolute;
     max-width: 700px;
+  }
+  .container {
+    position: relative;
+  }
+
+  .decor-bg {
+    position: absolute;
+    top: -116px;
+    right: 32px;
+    background-image: url('../img/background/desktop-decor-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    width: 526px;
+    height: 408px;
   }
 }
