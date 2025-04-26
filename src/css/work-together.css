@@ -95,6 +95,7 @@
     z-index: -1;
     filter: blur(4.7280731201171875px);
   }
+
   .wt_content {
     margin-top: 60px;
   }
@@ -133,6 +134,7 @@
     height: 408px;
     background-image: url('../img/background/desktop-decor-bg-3.png');
   }
+
   .work-together h2 {
     max-width: 520px;
   }

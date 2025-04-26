@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 768px) {
-  h2 {
+  .benefits h2 {
     margin-bottom: 40px;
   }
 }
