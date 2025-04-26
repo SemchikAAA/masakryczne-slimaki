@@ -18,6 +18,7 @@
   gap: 16px;
 }
 
+
 .text {
   display: grid;
   gap: 16px;
@@ -63,5 +64,5 @@
     background-position: top right;
     width: 526px;
     height: 408px;
-  }
+
 }
