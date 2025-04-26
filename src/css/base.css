@@ -89,7 +89,6 @@ body {
   letter-spacing: 0.5px;
   line-height: 32px;
   color: var(--black);
-  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
