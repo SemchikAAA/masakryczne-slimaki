@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .benefits-list {
@@ -13,14 +14,10 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-.benefits-items {
-  display: grid;
-  gap: 16px;
-}
-
 
 .text {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -64,5 +61,5 @@
     background-position: top right;
     width: 526px;
     height: 408px;
-
+  }
 }
