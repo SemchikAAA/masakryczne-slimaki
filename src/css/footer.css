@@ -1,0 +1,28 @@
+.ft-logo {
+    font-family: var(--font-family-impact);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 100%;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.ft-content {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.ft-social {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 320px;
+}
+.ft-last {
+   margin: auto;
+    max-width: 197px;
+    text-align: center;
+}
