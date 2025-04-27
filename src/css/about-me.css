@@ -1,0 +1,85 @@
+/* #region phone about-me */
+
+.about-me-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+
+  margin: 0;
+}
+
+.about-me-title-span {
+  color: var(--accet-green);
+}
+
+.about-me-img {
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-me-section-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.about-me-bio-first {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.about-me-bio-second {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.about-me-section-title {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+
+  padding-bottom: 32px;
+}
+
+.about-me-green-dots {
+  display: none;
+}
+
+.about-me-list {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+/* #endregion */
