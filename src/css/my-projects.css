@@ -1,0 +1,79 @@
+.pj-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pj-item-cont {
+  max-width: 320px;
+}
+.image-cont img {
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+.tech-text {
+  margin-bottom: 16px;
+}
+.load-more-btn {
+  padding: 12px 24px;
+  width: 154px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+}
+.load-more-btn svg {
+  position: relative;
+  top: -18px;
+}
+.site-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visit-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+.site-cont button {
+  display: flex;
+  gap: 12px;
+  width: 125px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: var(--lightgrey);
+  margin-left: auto;
+}
+@media only screen and (min-width: 767px) {
+  .pj-header {
+    margin-bottom: 60px;
+  }
+  .projects-list {
+    gap: 60px;
+  }
+  .load-more-btn {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .pj-header {
+    margin-bottom: 80px;
+  }
+  .projects-list {
+    gap: 80px;
+  }
+  .load-more-btn {
+    margin-top: 80px;
+  }
+  .container .projects-container {
+    padding: 0 136px;
+  }
+}
