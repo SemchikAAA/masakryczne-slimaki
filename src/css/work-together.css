@@ -78,7 +78,7 @@
 }
 
 /* #region Modal */
-.backdrop {
+.wt-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -90,7 +90,7 @@
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop.is-open {
+.wt-backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -117,8 +117,9 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 16px;
+  font-weight: normal;
 }
-.close-btn {
+.wt-close-btn {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -129,6 +130,9 @@
   right: 16px;
   position: absolute;
   stroke: var(--black);
+}
+.no-scroll {
+  overflow: hidden;
 }
 /* #endregion Modal */
 
