@@ -1,27 +1,11 @@
-.faq {
+    .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
     } 
-    .faq_title {
-    /* font-family: 'Impact';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 64px;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    color: #292929; */
-    /* width: 192px;
-    text-align: left; */
-    }
-    
-    .faq_title_question {
-    color: #00B068;
-    }
-  
+
     .accordion_list {
       width: 272px;
       padding: 0;
@@ -79,7 +63,6 @@
   .answer {
         max-height: 0;
         overflow: hidden;
-        /* transition: max-height 0.3s ease, padding 0.3s ease; */
     }
    
   
@@ -87,14 +70,7 @@
       height: 24px;
       border: none;
       background-color: transparent;
-      /* display: flex;
-      flex-direction: row;
-      /* align-items: center; 
-      justify-content: space-between; */
-      /* width: 100%; */
       text-align: left;
-      /* margin-top: 28px; */
-      /* padding: 20px 0;   */
       cursor: pointer;
     }
 
@@ -108,30 +84,11 @@
     }
     
     .accordion_header_text {
-    /* font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: #292929;*/
-    /* font-family: 'Poppins';
-    font-style: normal;
-    letter-spacing: 0.5px;*/
     text-transform: uppercase;  
     width: 224px;
     }
   
-  
-    .accordion_text {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #292929;
-  width: 100%;
-    }
+
 
   
   @media (min-width: 768px) {
@@ -163,7 +120,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+   @media (min-width: 1280px) {
     .decor_bg {
         position: absolute;
         bottom: 0;
@@ -184,7 +141,7 @@
     position: relative;
   }
 
-  .container {
+  .faq_container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
