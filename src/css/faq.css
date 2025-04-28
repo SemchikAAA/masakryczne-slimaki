@@ -7,7 +7,7 @@
     } 
 
     .accordion_list {
-      width: 272px;
+      width: 320px;
       padding: 0;
       margin: 0;
       list-style: none;
@@ -104,7 +104,7 @@
     }
 
     .accordion_list{ 
-        width: 656px;
+        width: 704px;
     }
 
     .accordion_item.open {
@@ -160,7 +160,7 @@
   }
 
   .accordion_list{ 
-    width: 544px;
+    width: 592px;
 }
 
   .acc_container {
