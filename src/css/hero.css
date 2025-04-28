@@ -1,5 +1,6 @@
 .hero {
     background-image: url('../img/background/mobile-decor-bg-8.png');
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,25 +12,27 @@
 .hero .container {}
 
 .hero-title {
-    font-weight: 400;
+font-family: var(--font-family-impact);
     font-size: 64px;
-    /* line-height: 80px; */
-    /* letter-spacing: 1.8px; */
-    /* vertical-align: middle; */
-    width: 100%;
-    justify-content: baseline;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    line-height: 80px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-top: 112px;
+    /* text-align: center; */
 
 }
 
 .hero-title span {
-    color: #00B068;
+    color: var(--accent-green);
     display: block;
 }
 
 .hero-link-wrapper {
     position: relative;
     width: max-content;
-    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .hero-link-bg {
@@ -41,6 +44,7 @@
     background-color: rgba(0, 195, 138, 0.2);
     border-radius: 20px;
     z-index: 1;
+    
 }
 
 .hero-link {
@@ -50,44 +54,55 @@
     gap: 8px;
     padding: 20px 40px;
     font-size: 16px;
-    font-weight: 500;
-    color: #1f1f1f;
+font-weight: var(--medium);
+    color: var(--black);
     text-decoration: none;
     z-index: 2;
 }
 
 .arrow {
     font-size: 20px;
-    color: #00B068;
+    color: var(--accent-green);
 }
 
 .hero-description {
+    font-family: var(--font-family-primary);
+    font-weight: 400;
     font-size: 18px;
-    width: 320px;
-    height: 140px;
-    width: 100%;
-    line-height: 28px;
-    text-align: justify;
-    margin: 0 auto;
     letter-spacing: 0.5px;
+    line-height: 28px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-top: 40px;
 }
 
 .hero-description span {
-    color: #00B068;
+    color: var(--accent-green);
 }
 
 .hero-social-link {
-    margin-top: 72px;
-    background-color: #E4E5E6;
+    padding: 32px 0;
+    background-color: var(--lightgrey);
+    text-align: center;
 }
 
 .hero-social-link ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 24px;
+}
+
+.hero-social-link ul li a {
+    font-family: var(--font-family-primary);
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    color: var(--black);
 }
 
 
@@ -105,25 +120,26 @@
 
 @media (min-width: 360px) and (max-width: 768px) {
     .hero {
-            background-image: url('../img/background/mobile-decor-bg-8.png');
+        
+            /* background-image: url('../img/background/mobile-decor-bg-8.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            /* padding-top: 96px 20px; */
+            padding-top: 96px 20px;
             width: 100%;
-            height: 968px;
+            height: 968px; */
         }
     
         .hero .container {}
     
         .hero-title {
-            font-weight: 400;
-            font-size: 64px;
-            /* line-height: 80px; */
-            /* letter-spacing: 1.8px; */
-            /* vertical-align: middle; */
-            width: 100%;
-            justify-content: baseline;
+        /* font-family: var(--font-family-impact);
+        font-size: 64px;
+        font-weight: normal;
+        letter-spacing: 1.8px;
+        line-height: 80px;
+        color: var(--black);
+        text-transform: uppercase; */
     
         }
     
@@ -135,7 +151,7 @@
         .hero-link-wrapper {
             position: relative;
             width: max-content;
-            margin: 0 auto;
+            
         }
     
         .hero-link-bg {
@@ -164,7 +180,7 @@
     
         .arrow {
             font-size: 20px;
-            color: #00B068;
+            color: var(--accent-green);
         }
     
         .hero-description {
@@ -174,25 +190,24 @@
             width: 100%;
             line-height: 28px;
             text-align: justify;
-            margin: 0 auto;
+            
             letter-spacing: 0.5px;
         }
     
         .hero-description span {
-            color: #00B068;
+            color: var(--accent-green);
         }
     
         .hero-social-link {
+             padding: 48px 0;
             margin-top: 72px;
-            background-color: #E4E5E6;
         }
-    
+
         .hero-social-link ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
+         gap: 32px;
         }
-}
+
+        .hero-social-link ul li a {
+            /* font-size: 20px; */
+        }
+  }

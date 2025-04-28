@@ -16,24 +16,30 @@
 }
 
 .logo {
-    font-weight: bold;
+    font-family: var(--font-family-impact);
+    font-weight: var(--bold);
     font-size: 24px;
     z-index: 1001;
-    /* color: green; */
+    color: var(--black);
+    text-decoration: none;
 }
 .logo span {
-    color: green;
+    font-family: var(--font-family-impact);
+    color: var(--accent-green);
 }
 
 .nav-header ul {
-    display: flex;
     list-style: none;
+    display: flex;
     gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-header a {
+.nav-header ul a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
+    font-family: var(--font-family-primary);
 }
 
 .burger {
@@ -53,7 +59,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--black);
     transition: all 0.3s ease;
 }
 
