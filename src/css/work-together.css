@@ -77,6 +77,61 @@
   background-color: var(--hover-green);
 }
 
+/* #region Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wt-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 48px 32px;
+  width: 320px;
+  height: 328px;
+  background-color: var(--white);
+}
+.thank-you {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.close-btn {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  position: absolute;
+  stroke: var(--black);
+}
+/* #endregion Modal */
+
 @media only screen and (min-width: 768px) {
   .work-together {
     position: relative;
@@ -123,6 +178,10 @@
 
   .wt_sbm_btn {
     max-width: 173px;
+  }
+  .wt-modal {
+    width: 492px;
+    height: 280px;
   }
 }
 
