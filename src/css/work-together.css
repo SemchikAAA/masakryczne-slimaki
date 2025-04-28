@@ -1,0 +1,171 @@
+.wt_content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wt_contact_me {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 320px;
+}
+
+.wt_contact_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wt_contact_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wt_form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 40px;
+}
+
+.input_email {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  max-width: 320px;
+  min-height: 48px;
+  background-color: var(--lightgrey);
+}
+.input_email::placeholder {
+  color: var(--black);
+}
+
+.input_message {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 320px;
+  min-height: 128px;
+  resize: none;
+  background-color: var(--lightgrey);
+}
+.input_message::placeholder {
+  color: var(--black);
+}
+
+.wt_sbm_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 320px;
+  height: 48px;
+
+  background-color: var(--accent-green);
+  color: var(--white);
+}
+.wt_sbm_btn:hover,
+.wt_sbm_btn:focus {
+  background-color: var(--hover-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together {
+    position: relative;
+  }
+  .wt_decor-bg {
+    position: absolute;
+    top: -50px;
+    right: 32px;
+    width: 336px;
+    height: 260px;
+    background-image: url('../img/background/tablet-decor-bg-7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(4.7280731201171875px);
+  }
+
+  .wt_content {
+    margin-top: 60px;
+  }
+
+  .wt_contact_me {
+    max-width: 704px;
+  }
+
+  .wt_contact_list {
+    flex-direction: row;
+  }
+
+  .wt_form {
+    max-width: 704px;
+    margin-top: 60px;
+  }
+
+  .input_email {
+    max-width: 704px;
+  }
+
+  .input_message {
+    max-width: 704px;
+  }
+
+  .wt_sbm_btn {
+    max-width: 173px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wt_decor-bg {
+    top: -120px;
+    right: 32px;
+    width: 526px;
+    height: 408px;
+    background-image: url('../img/background/desktop-decor-bg-3.png');
+  }
+
+  .work-together h2 {
+    max-width: 520px;
+  }
+
+  .wt_content {
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+
+  .wt_contact_me {
+    gap: 120px;
+    max-width: 488px;
+    max-height: 288px;
+  }
+
+  .wt_contact_list {
+    flex-direction: column;
+  }
+
+  .wt_form {
+    max-width: 592px;
+    max-height: 288px;
+    margin-top: 0;
+  }
+
+  .input_email {
+    max-width: 592px;
+  }
+
+  .input_message {
+    max-width: 592px;
+  }
+}

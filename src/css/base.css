@@ -36,29 +36,32 @@ body {
 
 .header-first {
   font-family: var(--font-family-impact);
-  font-size: 136px;
+  font-size: 64px;
   font-weight: normal;
   letter-spacing: 1.8px;
-  line-height: 156px;
+  line-height: 80px;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .header-second {
   font-family: var(--font-family-impact);
-  font-size: 108px;
+  font-size: 52px;
   font-weight: normal;
   letter-spacing: 1.8px;
-  line-height: 124px;
+  line-height: 64px;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .header-third {
   font-family: var(--font-family-primary);
   font-weight: var(--medium);
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 0.5px;
-  line-height: 48px;
+  line-height: 40px;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .body-text-light {
@@ -82,37 +85,32 @@ body {
 .caption {
   font-family: var(--font-family-primary);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.5px;
-  line-height: 32px;
+  line-height: 28px;
   color: var(--black);
+  text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   .header-first {
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 136px;
+    line-height: 156px;
   }
 
   .header-second {
-    font-size: 52px;
-    line-height: 64px;
+    font-size: 108px;
+    line-height: 124px;
   }
 
   .header-third {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .body-text-light,
-  .body-text-medium {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 48px;
   }
 
   .caption {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 

@@ -1,0 +1,66 @@
+.benefits-body-icon {
+  background-color: var(--light-accent);
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.benefits-list {
+  gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .header-box {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .benefits-list li:first-child {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .benefits-list {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 276px;
+  }
+  .benefits-list li:first-child {
+    grid-column: 3;
+  }
+
+  .header-box {
+    position: absolute;
+    max-width: 700px;
+  }
+  .background-decoration {
+    position: relative;
+  }
+
+  .decor-bg {
+    position: absolute;
+    top: -116px;
+    right: 32px;
+    background-image: url('../img/background/desktop-decor-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    width: 526px;
+    height: 408px;
+  }
+}
