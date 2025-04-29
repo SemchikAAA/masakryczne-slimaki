@@ -1,7 +1,6 @@
-<section class="section work-together">
-  <div class="wt_decor-bg"></div>
-
+<section class="section work-together" id="work-together">
   <div class="container">
+    <div class="wt_decor-bg"></div>
     <h2 class="header-second">
       let's <span class="color-accent-green">work together</span>
     </h2>
@@ -17,7 +16,7 @@
             <svg class="wt-svg" width="24px" height="24px">
               <use href="./img/icon/icons.svg#icon-phone"></use>
             </svg>
-            <a class="body-text-light" href="tel:+380904567890"
+            <a class="body-text-light wt-contact-linc" href="tel:+380904567890"
               >+38 090 456 78 90</a
             >
           </li>
@@ -25,7 +24,9 @@
             <svg class="wt-svg" width="24px" height="24px">
               <use href="./img/icon/icons.svg#icon-message"></use>
             </svg>
-            <a class="body-text-light" href="mailto:lloydjefferson@gmail.com"
+            <a
+              class="body-text-light wt-contact-linc"
+              href="mailto:lloydjefferson@gmail.com"
               >lloydjefferson@gmail.com</a
             >
           </li>
@@ -33,7 +34,10 @@
             <svg class="wt-svg" width="24px" height="24px">
               <use href="./img/icon/icons.svg#icon-mark"></use>
             </svg>
-            <address class="body-text-light" style="font-style: normal">
+            <address
+              class="body-text-light wt-contact-linc"
+              style="font-style: normal"
+            >
               USA, New York
             </address>
           </li>
@@ -41,12 +45,24 @@
       </div>
 
       <form class="wt_form">
-        <input
-          class="input_email body-text-light"
-          type="email"
-          placeholder="Your email*"
-        />
+        <div class="input-wrapper">
+          <input
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            class="input_email body-text-light"
+            type="email"
+            placeholder="Your email*"
+          />
+          <svg class="valid-icon invisible" width="14" height="14">
+            <use href="./img/icon/icons.svg#icon-check"></use>
+          </svg>
+        </div>
+        <p class="error-message color-error invisible">
+          Invalid email, try again
+        </p>
+
         <textarea
+          name="comment"
           class="input_message body-text-light"
           type="text"
           placeholder="Message"
@@ -58,3 +74,23 @@
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="wt-backdrop">
+  <div class="wt-modal">
+    <button type="button" class="wt-close-btn">
+      <svg width="24" height="24">
+        <use href="./img/icon/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h3 class="color-accent-green thank-you">
+      Thank you for your interest in cooperation!
+    </h3>
+
+    <p class="body-text-light" style="text-align: center">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
