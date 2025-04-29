@@ -116,7 +116,7 @@
 
   .green-dots {
     position: absolute;
-    bottom: -156px;
+    bottom: -200px;
     right: 32px;
     background-image: url('../img/background/tablet-decor-bg-6.png');
     background-repeat: no-repeat;
@@ -130,5 +130,27 @@
 /* #endregion */
 
 /* #region desk-top about-me */
+
+@media (min-width: 1280px) {
+  .image-about-me {
+    margin-top: 312px;
+    margin-left: 208px;
+  }
+  .bio-about-me {
+    padding-left: 136px;
+  }
+  .info-columns {
+    margin-left: 208px;
+    gap: 136px;
+    margin-top: 40px;
+  }
+
+  .green-dots {
+    bottom: -80px;
+    right: 40px;
+    width: 384px;
+    height: 288px;
+  }
+}
 
 /* #endregion */
