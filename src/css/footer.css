@@ -1,3 +1,7 @@
+.footer {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
 .ft-logo {
     font-family: var(--font-family-impact);
     font-size: 24px;
@@ -8,7 +12,6 @@
     text-transform: uppercase;
 }
 .ft-content {
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +27,6 @@
    margin: auto;
    max-width: 197px;
    text-align: center;
-   margin-bottom: 24px;
 }
 
 /* Tablet */
