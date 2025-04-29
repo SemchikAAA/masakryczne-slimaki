@@ -25,6 +25,14 @@
   padding-bottom: 24px;
 }
 
+.info-columns h3 {
+  margin-bottom: 32px;
+}
+
+.education-about-me {
+  margin-bottom: 40px;
+}
+
 .about-me-list {
   display: flex;
   gap: 12px;
@@ -99,9 +107,6 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-  }
-
-  .info-columns h3 {
     margin-top: 20px;
   }
 }
