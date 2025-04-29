@@ -12,16 +12,15 @@
   margin-bottom: 40px;
 }
 
-.header-third {
-  padding-bottom: 32px;
-  margin-top: 40px;
+.bio-title {
+  margin-bottom: 32px;
 }
 
 .bio-about-me {
   flex: 1;
 }
 
-.body-text-light {
+.bio-text {
   margin: 0;
   padding-bottom: 24px;
 }
@@ -80,8 +79,14 @@
 
   .bio-about-me {
     flex: 1;
+    margin-top: 40px;
     padding-left: 32px;
   }
+
+  .bio-title {
+    margin-top: 0;
+  }
+
   .about-me-img {
     width: 336px;
     height: 392px;
