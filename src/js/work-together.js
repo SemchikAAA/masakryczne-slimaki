@@ -4,6 +4,9 @@ import 'modern-normalize/modern-normalize.css';
 const backdrop = document.querySelector('.wt-backdrop');
 const form = document.querySelector('.wt_form');
 const closeBtn = document.querySelector('.wt-close-btn');
+const emailInput = form.elements.email;
+const validIcon = document.querySelector('.valid-icon');
+const errorMessage = document.querySelector('.error-message');
 
 const LS_KEY = 'feedback-form-state';
 const formData = {
@@ -28,6 +31,24 @@ if (savedData) {
   formData.comment = savedData.comment || '';
 }
 
+// /// VALID EMAIL /// //
+emailInput.addEventListener('input', validateEmail);
+
+function validateEmail() {
+  const value = emailInput.value.trim();
+  const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+  if (emailPattern.test(value)) {
+    validIcon.classList.remove('invisible');
+    errorMessage.classList.add('invisible');
+    emailInput.classList.remove('color-error');
+  } else {
+    errorMessage.classList.remove('invisible');
+    validIcon.classList.add('invisible');
+    emailInput.classList.add('color-error');
+  }
+}
+
 // /// SUBMIT /// //
 form.addEventListener('submit', submitData);
 
@@ -46,6 +67,10 @@ async function submitData(event) {
     localStorage.removeItem(LS_KEY);
     formData.email = '';
     formData.comment = '';
+
+    validIcon.classList.add('invisible');
+    errorMessage.classList.add('invisible');
+    emailInput.classList.remove('color-error');
 
     return;
   } catch (error) {

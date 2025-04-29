@@ -1,4 +1,4 @@
-<section class="section work-together">
+<section class="section work-together" id="work-together">
   <div class="container">
     <div class="wt_decor-bg"></div>
     <h2 class="header-second">
@@ -40,13 +40,22 @@
       </div>
 
       <form class="wt_form">
-        <input
-          name="email"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          class="input_email body-text-light"
-          type="email"
-          placeholder="Your email*"
-        />
+        <div class="input-wrapper">
+          <input
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            class="input_email body-text-light"
+            type="email"
+            placeholder="Your email*"
+          />
+          <svg class="valid-icon invisible" width="14" height="14">
+            <use href="./img/icon/icons.svg#icon-check"></use>
+          </svg>
+        </div>
+        <p class="error-message color-error invisible">
+          Invalid email, try again
+        </p>
+
         <textarea
           name="comment"
           class="input_message body-text-light"
