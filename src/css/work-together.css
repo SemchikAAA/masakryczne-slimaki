@@ -26,7 +26,7 @@
 .wt_form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
   width: 100%;
   max-width: 320px;
   margin-top: 40px;
@@ -36,10 +36,14 @@
   box-sizing: border-box;
   border: none;
   border-radius: 8px;
-  padding: 12px 16px;
+  padding: 12px 48px 12px 16px;
+  width: 100%;
   max-width: 320px;
   min-height: 48px;
   background-color: var(--lightgrey);
+}
+.input_email:focus-visible {
+  outline: none;
 }
 .input_email::placeholder {
   color: var(--black);
@@ -50,10 +54,14 @@
   border: none;
   border-radius: 8px;
   padding: 16px;
+  margin-bottom: 32px;
   max-width: 320px;
   min-height: 128px;
   resize: none;
   background-color: var(--lightgrey);
+}
+.input_message:focus-visible {
+  outline: none;
 }
 .input_message::placeholder {
   color: var(--black);
@@ -75,6 +83,95 @@
 .wt_sbm_btn:hover,
 .wt_sbm_btn:focus {
   background-color: var(--hover-green);
+}
+
+/* #region Modal */
+.wt-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.wt-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wt-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 48px 32px;
+  width: 320px;
+  height: 328px;
+  background-color: var(--white);
+}
+.thank-you {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+.wt-close-btn {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  position: absolute;
+  stroke: var(--black);
+}
+.no-scroll {
+  overflow: hidden;
+}
+/* #endregion Modal */
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.valid-icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.error-message {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  margin-bottom: 16px;
+  pointer-events: none;
+}
+.invisible {
+  opacity: 0;
+}
+
+.wt-contact-linc:hover,
+.wt-contact-linc:focus {
+  color: var(--accent-green);
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,6 +221,13 @@
   .wt_sbm_btn {
     max-width: 173px;
   }
+  .wt-modal {
+    width: 492px;
+    height: 280px;
+  }
+  .input-wrapper {
+    max-width: 704px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -165,6 +269,9 @@
   }
 
   .input_message {
+    max-width: 592px;
+  }
+  .input-wrapper {
     max-width: 592px;
   }
 }
