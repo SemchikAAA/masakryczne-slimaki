@@ -1,50 +1,40 @@
 .hero {
     background-image: url('../img/background/mobile-decor-bg-8.png');
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* padding-top: 96px 20px; */
     width: 100%;
     height: 968px;
 }
 
-.hero .container {}
-
-.hero-title {
-font-family: var(--font-family-impact);
-    font-size: 64px;
-    font-weight: normal;
-    letter-spacing: 1.8px;
-    line-height: 80px;
-    color: var(--black);
-    text-transform: uppercase;
+.header-first {
     margin-top: 112px;
-    /* text-align: center; */
-
-}
-
-.hero-title span {
-    color: var(--accent-green);
-    display: block;
 }
 
 .hero-link-wrapper {
     position: relative;
-    width: max-content;
-    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 320px;
+    height: 92px;
 }
 
 .hero-link-bg {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px;
+    width: 165px;
     height: 100%;
     background-color: rgba(0, 195, 138, 0.2);
-    border-radius: 20px;
+    border-radius: 16px;
     z-index: 1;
-    
+    transition: background-color 0.3s ease;
+}
+
+.hero-link-wrapper:hover .hero-link-bg,
+.hero-link-wrapper:focus-within .hero-link-bg {
+    background-color: var(--accent-green);
 }
 
 .hero-link {
@@ -54,7 +44,7 @@ font-family: var(--font-family-impact);
     gap: 8px;
     padding: 20px 40px;
     font-size: 16px;
-font-weight: var(--medium);
+    font-weight: var(--medium);
     color: var(--black);
     text-decoration: none;
     z-index: 2;
@@ -66,22 +56,13 @@ font-weight: var(--medium);
 }
 
 .hero-description {
-    font-family: var(--font-family-primary);
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-    color: var(--black);
-    text-transform: uppercase;
     margin-top: 40px;
-}
-
-.hero-description span {
-    color: var(--accent-green);
+    text-align: justify;
 }
 
 .hero-social-link {
-    padding: 32px 0;
+    padding: 48px 0;
+    margin-top: 72px;
     background-color: var(--lightgrey);
     text-align: center;
 }
@@ -93,121 +74,40 @@ font-weight: var(--medium);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
 
-.hero-social-link ul li a {
+.hero-social {
     font-family: var(--font-family-primary);
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
     color: var(--black);
+    transition: color 0.3s ease;
 }
 
+.hero-social:hover,
+.hero-social:focus {
+    color: var(--accent-green);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 768px) {
     .hero {
-        
-            /* background-image: url('../img/background/mobile-decor-bg-8.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding-top: 96px 20px;
-            width: 100%;
-            height: 968px; */
-        }
-    
-        .hero .container {}
-    
-        .hero-title {
-        /* font-family: var(--font-family-impact);
-        font-size: 64px;
-        font-weight: normal;
-        letter-spacing: 1.8px;
-        line-height: 80px;
-        color: var(--black);
-        text-transform: uppercase; */
-    
-        }
-    
-        .hero-title span {
-            color: #00B068;
-            display: block;
-        }
-    
-        .hero-link-wrapper {
-            position: relative;
-            width: max-content;
-            
-        }
-    
-        .hero-link-bg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100px;
-            height: 100%;
-            background-color: rgba(0, 195, 138, 0.2);
-            border-radius: 20px;
-            z-index: 1;
-        }
-    
-        .hero-link {
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 20px 40px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #1f1f1f;
-            text-decoration: none;
-            z-index: 2;
-        }
-    
-        .arrow {
-            font-size: 20px;
-            color: var(--accent-green);
-        }
-    
-        .hero-description {
-            font-size: 18px;
-            width: 320px;
-            height: 140px;
-            width: 100%;
-            line-height: 28px;
-            text-align: justify;
-            
-            letter-spacing: 0.5px;
-        }
-    
-        .hero-description span {
-            color: var(--accent-green);
-        }
-    
-        .hero-social-link {
-             padding: 48px 0;
-            margin-top: 72px;
-        }
+        background-image: url('../img/background/tablet-decor-bg-6.png');
+    }
 
-        .hero-social-link ul {
-         gap: 32px;
-        }
+    .hero-link-wrapper {
+        justify-content: flex-start;
+    }
 
-        .hero-social-link ul li a {
-            /* font-size: 20px; */
-        }
-  }
+    .hero-description {
+        max-width: 680px;
+        margin: 40px auto 0;
+    }
+
+    .hero-social-link ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
