@@ -83,8 +83,6 @@
         background-image: url('../img/background/mobile-decor-bg-8.png');
     }
 
-    
-
     .nav-header.active {
         right: 0;
     }
@@ -109,4 +107,15 @@
     .burger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
     }
+}
+
+@media (min-width: 1280px) {
+    .burger {
+        display: none;
+    }
+
+          .header-third {
+              font-size: 36px;
+              line-height: 48px;
+          }
 }
