@@ -19,6 +19,7 @@
     font-size: 24px;
     font-family: var(--font-family-impact);
     color: var(--black);
+    width: 180px;
 }
 
 .logo span {
@@ -81,6 +82,8 @@
         justify-content: center;
         background-image: url('../img/background/mobile-decor-bg-8.png');
     }
+
+    
 
     .nav-header.active {
         right: 0;
