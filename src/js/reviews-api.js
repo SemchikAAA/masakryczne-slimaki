@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.reviews-swiper', {
     slidesPerView: 2,
@@ -9,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        // spaceBetween: 20,
       },
-      768: {
+      1280: {
         slidesPerView: 2,
         spaceBetween: 30,
       },

@@ -1,138 +1,63 @@
-<section class="reviews-section">
+<section class="reviews-section section">
   <div class="container">
-    <h2 class="header-second">REVIEWS</h2>
+    <h2 class="header-second" style="text-align: center">REVIEWS</h2>
 
-    <div class="swiper reviews-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="review-card">
-            <p class="body-text-light">
-              Work with was extraordinary! He turned out to be a very competent
-              and responsible specialist. The projects were completed on time
-              and the result exceeded my expectations
-            </p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">
-                <img
-                  src="../img/reviews/natalia-shevchenko.png"
-                  srcset="
-                    ../img/reviews/natalia-shevchenko.png    1x,
-                    ../img/reviews/natalia-shevchenko@2x.png 2x
-                  "
-                  alt="Natalia Shevchenko"
-                  class="avatar-img"
-                />
-              </div>
-              <p class="reviewer-name">Natalia Shevchenko</p>
-            </div>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <p class="body-text-light">
+            Work with was extraordinary! He turned out to be a very competent
+            and responsible specialist. The projects were completed on time and
+            the result exceeded my expectations
+          </p>
+          <div class="reviewer">
+            <img
+              class="reviewer-avatar"
+              src="../img/reviews/natalia-shevchenko.png"
+              srcset="
+                ../img/reviews/natalia-shevchenko.png    1x,
+                ../img/reviews/natalia-shevchenko@2x.png 2x
+              "
+              alt="Natalia Shevchenko"
+            />
+            <p class="reviewer-name">Natalia Shevchenko</p>
           </div>
-        </div>
+        </li>
 
-        <div class="swiper-slide">
-          <div class="review-card">
-            <p class="body-text-light">
-              I have the honor to recommend him as an exceptional professional
-              in his field. His knowledge and expertise are undeniable.
-              Cooperation with him always brings impressive results.
-            </p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">
-                <img
-                  src="../img/reviews/dmytro-nazarenko.png"
-                  srcset="
-                    ../img/reviews/dmytro-nazarenko.png    1x,
-                    ../img/reviews/dmytro-nazarenko@2x.png 2x
-                  "
-                  alt="Dmytro Nazarenko"
-                  class="avatar-img"
-                />
-              </div>
-              <p class="reviewer-name">Dmytro Nazarenko</p>
-            </div>
+        <li class="swiper-slide">
+          <p class="body-text-light">
+            I have the honor to recommend him as an exceptional professional in
+            his field. His knowledge and expertise are undeniable. Cooperation
+            with him always brings impressive results.
+          </p>
+          <div class="reviewer">
+            <img
+              class="reviewer-avatar"
+              src="../img/reviews/dmytro-nazarenko.png"
+              srcset="
+                ../img/reviews/dmytro-nazarenko.png    1x,
+                ../img/reviews/dmytro-nazarenko@2x.png 2x
+              "
+              alt="Dmytro Nazarenko"
+            />
+            <p class="reviewer-name">Natalia Shevchenko</p>
           </div>
-        </div>
+        </li>
+      </ul>
+    </div>
 
-        <div class="swiper-slide">
-          <div class="review-card">
-            <p class="body-text-light">
-              The level of professionalism and attention to detail is
-              outstanding. I'm extremely satisfied with the quality of work and
-              would definitely recommend to anyone looking for reliable
-              services.
-            </p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">
-                <img
-                  src="../img/reviews/noname.png"
-                  alt="Oleksandr Petrenko"
-                  class="avatar-img"
-                />
-              </div>
-              <p class="reviewer-name">Oleksandr Petrenko</p>
-            </div>
-          </div>
-        </div>
+    <div class="navigation-buttons">
+      <div class="nav-button prev-button" id="prev-button">
+        <svg class="icon-arrow" width="24" height="24">
+          <use href="./img/icon/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="review-card">
-            <p class="body-text-light">
-              Incredible experience working together! The communication was
-              clear, deadlines were met, and the final product exceeded all
-              expectations. Will definitely work together again.
-            </p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">
-                <img
-                  src="../img/reviews/noname.png"
-                  alt="Maria Kovalenko"
-                  class="avatar-img"
-                />
-              </div>
-              <p class="reviewer-name">Maria Kovalenko</p>
-            </div>
-          </div>
-        </div>
+      <div class="nav-button next-button" id="next-button">
+        <svg class="icon-arrow" width="24" height="24">
+          <use href="./img/icon/icons.svg#icon-arrow-right"></use>
+        </svg>
       </div>
     </div>
   </div>
-
-  <div class="navigation-buttons">
-    <button class="nav-button prev-button" id="prev-button">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M15 18L9 12L15 6"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-    <button class="nav-button next-button" id="next-button">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9 18L15 12L9 6"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-  </div>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="../js/reviews-api.js"></script>
