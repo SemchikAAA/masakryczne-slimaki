@@ -63,7 +63,6 @@
     transition: all 0.3s ease;
 }
 
-/* --- Tablet --- */
 @media (min-width: 360px) and (max-width: 768px) {
     .nav-header {
         position: fixed;
