@@ -16,11 +16,14 @@
   margin-bottom: 32px;
 }
 
+.bio-about-me {
+  margin-bottom: 40px;
+}
+
 .bio-about-me-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 40px;
 }
 
 .info-columns {
@@ -89,6 +92,7 @@
     flex: 1;
     margin-top: 40px;
     padding-left: 32px;
+    margin-bottom: 0;
   }
 
   .bio-title {
@@ -108,6 +112,18 @@
     flex-direction: row;
     gap: 32px;
     margin-top: 20px;
+  }
+
+  .green-dots {
+    position: absolute;
+    bottom: -156px;
+    right: 32px;
+    background-image: url('../img/background/tablet-decor-bg-6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 336px;
+    height: 252px;
   }
 }
 
