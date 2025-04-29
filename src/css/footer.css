@@ -1,0 +1,56 @@
+.ft-logo {
+    font-family: var(--font-family-impact);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 100%;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.ft-content {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.ft-social {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 320px;
+}
+.ft-last {
+   margin: auto;
+   max-width: 197px;
+   text-align: center;
+   margin-bottom: 24px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+.ft-social {
+        flex-direction: row;
+        gap: 40px;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+.ft-last {
+        max-width: 351px;
+        margin-right: 0px;
+        }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+
+.ft-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
