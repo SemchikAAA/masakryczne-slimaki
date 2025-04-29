@@ -60,12 +60,14 @@
   .accordion_item.open .answer {
       overflow: visible;
       max-height: none;
+      opacity: 1;
   }
 
 .answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.4s ease-in-out;
+      transition: max-height 0.8s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
   }
  
 
