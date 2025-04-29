@@ -68,6 +68,10 @@
     margin-top: 408px;
   }
 
+  .design-dots {
+    position: relative;
+  }
+
   .about-me-img {
     width: 100%;
     max-width: 336px;
@@ -116,8 +120,8 @@
 
   .green-dots {
     position: absolute;
-    bottom: -200px;
-    right: 32px;
+    bottom: 153px;
+    right: 37px;
     background-image: url('../img/background/tablet-decor-bg-6.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -146,8 +150,8 @@
   }
 
   .green-dots {
-    bottom: -80px;
-    right: 40px;
+    bottom: 240px;
+    right: 65px;
     width: 384px;
     height: 288px;
   }
