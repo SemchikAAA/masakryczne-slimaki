@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         triggerClass: 'accordion_header',
         panelClass: 'answer',
         activeClass: 'open',
-        collapse: false,
+        collapse: true,
     })
 
     const accordionBtns = document.querySelectorAll('.accordion_btn')
