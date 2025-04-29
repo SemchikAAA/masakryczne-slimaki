@@ -133,7 +133,6 @@
 @media (min-width: 1280px) {
     .hero {
         background-image: url('../img/background/desktop-decor-bg-1.png');
-        
     }
 
   .hero-content-wrapper {
@@ -172,16 +171,14 @@
     align-items: center;
     position: relative;
     height: 60px;
-    /* або інша висота під фон */
+
 }
 
 .hero-link-bg {
     position: absolute;
     width: 144px;
-    /* зроби більше */
     height: 60px;
-    /* background-color: var(--color-accent-green); */
-    /* або конкретно зелений */
+
     border-radius: 12px;
     z-index: 0;
 }
@@ -195,9 +192,8 @@
     z-index: 1;
     padding: 16px 32px;
     color: var(--color-dark);
-    /* або білий, якщо фон темний */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 
     .hero-description {
