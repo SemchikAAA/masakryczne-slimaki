@@ -16,7 +16,7 @@
   margin-bottom: 32px;
 }
 
-.bio-about-me {
+.bio-about-me-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
