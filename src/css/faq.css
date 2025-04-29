@@ -60,11 +60,14 @@
   .accordion_item.open .answer {
       overflow: visible;
       max-height: none;
+      opacity: 1;
   }
 
 .answer {
       max-height: 0;
       overflow: hidden;
+      transition: max-height 0.8s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
   }
  
 
@@ -151,6 +154,7 @@
   align-items: flex-start;
   gap: 98px;
   position: relative;
+  height: 1020px;
 }
 
 .faq_title_container {
