@@ -169,6 +169,11 @@
   opacity: 0;
 }
 
+.wt-contact-linc:hover,
+.wt-contact-linc:focus {
+  color: var(--accent-green);
+}
+
 @media only screen and (min-width: 768px) {
   .work-together {
     position: relative;
