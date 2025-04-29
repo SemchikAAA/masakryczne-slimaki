@@ -5,6 +5,7 @@
   align-items: center;
   gap: 40px;
   } 
+  
 
   .accordion_list {
     width: 320px;
@@ -12,6 +13,7 @@
     margin: 0;
     list-style: none;
   }
+  
   
   .faq_title_container {
   width: 320px;
