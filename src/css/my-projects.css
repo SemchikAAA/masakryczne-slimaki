@@ -30,6 +30,7 @@
   padding: 12px 24px;
   height: 52px;
   margin: 0 auto;
+  background-color: var(--color-secondary);
 }
 .load-more-btn:hover {
   color: var(--accent-green);
@@ -59,7 +60,7 @@
 }
 .site-cont button {
   display: flex;
-  gap: 12px;
+  gap: 12px;а
   width: 125px;
   height: 48px;
   border-radius: 8px;
@@ -67,8 +68,15 @@
   background: var(--lightgrey);
   margin-left: auto;
 }
+.theme-dark .site-cont button {
+  background: #2a2d32;
+}
 .site-cont button:hover {
   background-color: var(--hover-grey);
+}
+
+.theme-dark .site-cont button:hover {
+  background-color: #3b3f45;
 }
 
 @media only screen and (min-width: 767px) {

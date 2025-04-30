@@ -1,121 +1,122 @@
 .header {
-    width: 100%;
-    height: 64px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .logo {
-    text-decoration: none;
-    font-weight: var(--bold);
-    font-size: 24px;
-    font-family: var(--font-family-impact);
-    color: var(--black);
-    width: 180px;
+  text-decoration: none;
+  font-weight: var(--bold);
+  font-size: 24px;
+  font-family: var(--font-family-impact);
+  color: var(--font-color);
+  width: 180px;
 }
 
 .logo span {
-    color: var(--accent-green);
+  color: var(--accent-green);
 }
 
 .nav-header ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-header a {
-    text-decoration: none;
-    color: var(--black);
-    font-family: var(--font-family-primary);
-    font-weight: var(--medium);
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: var(--font-family-primary);
+  font-weight: var(--medium);
 }
 
 .nav-header a:hover,
 .nav-header a:focus {
-    color: var(--accent-green);
+  color: var(--accent-green);
 }
 
 .burger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .burger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--black);
-    transition: all 0.3s ease;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--font-color);
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
-    .nav-header {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: var(--white);
-        transition: right 0.3s ease;
-        padding: 50px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        z-index: 999;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../img/background/mobile-decor-bg-8.png');
-    }
+  .nav-header {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transition: right 0.3s ease;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/background/mobile-decor-bg-8.png');
+  }
 
-    .nav-header.active {
-        right: 0;
-    }
+  .nav-header.active {
+    right: 0;
+    background-color: var(--color-secondary);
+  }
 
-    .nav-header ul {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .nav-header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .burger {
-        display: flex;
-    }
+  .burger {
+    display: flex;
+  }
 
-    .burger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
 
-    .burger.active span:nth-child(2) {
-        opacity: 0;
-    }
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-    .burger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }
 
 @media (min-width: 1280px) {
-    .burger {
-        display: none;
-    }
+  .burger {
+    display: none;
+  }
 
-    .header-third {
-        font-size: 36px;
-        line-height: 48px;
-    }
+  .header-third {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
