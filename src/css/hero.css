@@ -144,7 +144,9 @@
   .hero {
     background-image: url('/img/background/desktop-decor-bg-1.png');
   }
-
+  .hero-cont {
+    margin: 16px auto;
+  }
   .hero-content-wrapper {
     display: flex;
     flex-direction: row;

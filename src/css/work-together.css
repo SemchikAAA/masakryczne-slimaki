@@ -86,6 +86,7 @@
 
   background-color: var(--accent-green);
   color: var(--white);
+  transition: background-color 0.3s ease;
 }
 .wt_sbm_btn:hover,
 .wt_sbm_btn:focus {
@@ -185,9 +186,11 @@
 .invisible {
   opacity: 0;
 }
-
-.wt-contact-linc:hover,
-.wt-contact-linc:focus {
+.wt-contact-link {
+  transition: color 0.3s ease;
+}
+.wt-contact-link:hover,
+.wt-contact-link:focus {
   color: var(--accent-green);
 }
 
