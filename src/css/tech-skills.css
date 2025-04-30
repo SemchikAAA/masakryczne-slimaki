@@ -1,5 +1,5 @@
 .visually-hidden {
-    position: absolute !important;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -37,7 +37,7 @@
 }
 
 .marquee-container.bottom {
-    background: var(--light-grey);
+    background: var(--lightgrey);
     width: 100%;
 }
 
@@ -109,6 +109,18 @@
 
 .marquee:hover {
     animation-play-state: paused;
+}
+
+.marquee-line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .marquee-top {
