@@ -1,37 +1,36 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .no-scroll {
-    overflow: hidden;
-    height: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
 .header {
   width: 100%;
-  height: 64px;
   display: flex;
   align-items: center;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
 }
 
 .logo {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0.06em;
-    font-family: var(--font-family-impact);
-    color: var(--font-color);
-    width: 180px;
-    z-index: 1001;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  font-family: var(--font-family-impact);
+  color: var(--font-color);
+  width: 180px;
+  z-index: 1001;
 }
 
 .logo span {
@@ -46,11 +45,10 @@ html {
   margin: 0;
 }
 
-
 .nav-header a {
+  transition: color 0.3s ease;
   color: var(--font-color);
 }
-
 
 .nav-header a:hover,
 .nav-header a:focus {
@@ -58,13 +56,13 @@ html {
 }
 
 .burger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .burger span {
@@ -76,66 +74,65 @@ html {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .nav-header {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: var(--white);
-        transition: right 0.3s ease;
-        padding-top: 36px;
-        padding-right: 32px;
-        padding-bottom: 36px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        z-index: 999;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../img/background/mobile-decor-bg-8.png');
-    }
+  .nav-header {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transition: right 0.3s ease;
+    padding-top: 36px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/background/mobile-decor-bg-8.png');
+  }
 
-    .nav-header.active {
-       right: 0;
-       background-color: var(--color-secondary);
-    }
+  .nav-header.active {
+    right: 0;
+    background-color: var(--color-secondary);
+  }
 
-    .nav-header ul {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .nav-header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .burger {
-        display: flex;
-    }
+  .burger {
+    display: flex;
+  }
 
-    .burger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
 
-    .burger.active span:nth-child(2) {
-        opacity: 0;
-    }
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-    .burger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }
 
 @media (min-width: 768px) {
-    .burger {
-        display: none;
-    }
+  .burger {
+    display: none;
+  }
 
-    .header-container {
-        padding: 32px;
-    }
+  .header-container {
+    padding: 36px 32px;
+  }
 
-    .logo {
-        width: 233px;
-        font-size: 32px;
-        letter-spacing: 0.05em;
-    }
+  .logo {
+    width: 233px;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
 }
-

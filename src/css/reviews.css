@@ -60,7 +60,9 @@
 .nav-button:focus {
   background-color: #2a2d32;
 }
-
+.theme-dark .nav-button {
+  border-color: var(--white);
+}
 .nav-button.disabled {
   border-color: var(--lightgrey);
   pointer-events: none;
