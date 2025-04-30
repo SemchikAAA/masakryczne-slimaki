@@ -1,12 +1,12 @@
 const projects = [
   {
-    image: '/img/projects/wallet-webservice.jpg',
-    img2x: '/img/projects/wallet-webservice@2x.jpg',
+    image: './img/projects/wallet-webservice.jpg',
+    img2x: './img/projects/wallet-webservice@2x.jpg',
     title: 'Wallet webservice',
   },
   {
-    image: '/img/projects/green-harvest.jpg',
-    img2x: '/img/projects/green-harvest@2x.jpg',
+    image: '../img/projects/green-harvest.jpg',
+    img2x: '../img/projects/green-harvest@2x.jpg',
     title: 'Green harvest webservice',
   },
   {
@@ -83,7 +83,7 @@ function getMarkup(projects) {
                     VISIT
                     <div class="visit-arrow">
                       <svg width="18" height="18">
-                        <use href="/img/icon/icons.svg#icon-visit-icon"></use>
+                        <use href="../img/icon/icons.svg#icon-visit-icon"></use>
                       </svg>
                     </div>
                     </a>
