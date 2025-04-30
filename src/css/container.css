@@ -14,10 +14,6 @@
   padding-top: 0;
 }
 
-.section:last-of-type {
-  padding-bottom: 0;
-}
-
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .container {
