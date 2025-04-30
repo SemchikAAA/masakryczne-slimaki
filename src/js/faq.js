@@ -1,6 +1,13 @@
 import Accordion from "accordion-js";
 import "accordion-js/dist/accordion.min.css";
 
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.answer').forEach(el => {
+      el.style.removeProperty('height');
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const accordion = new Accordion('.accordion_list', {
         duration: 600, 
