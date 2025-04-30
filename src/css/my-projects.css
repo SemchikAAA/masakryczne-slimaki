@@ -29,8 +29,10 @@
   height: 52px;
   margin: 0 auto;
   background-color: var(--color-secondary);
+  transition: color 0.3s ease;
 }
-.load-more-btn:hover {
+.load-more-btn:hover,
+.load-more-btn:focus {
   color: var(--accent-green);
 }
 .load-more-btn::after {
@@ -65,16 +67,19 @@
   padding: 12px 24px;
   background: var(--lightgrey);
   margin-left: auto;
+  transition: background-color 0.3s ease;
 }
 
 .theme-dark .site-cont a {
   background: #2a2d32;
 }
-.site-cont a:hover {
+.site-cont a:hover,
+.site-cont a:focus {
   background-color: var(--hover-grey);
 }
 
-.theme-dark .site-cont a:hover {
+.theme-dark .site-cont a:hover,
+.theme-dark .site-cont a:focus {
   background-color: #3b3f45;
 }
 
