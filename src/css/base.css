@@ -24,8 +24,8 @@
 
 body {
   font-family: var(--font-family-primary);
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--font-color);
+  background-color: var(--color-secondary);
   margin: 0;
   padding: 0;
   display: flex;
@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 125%;
-  color: var(--black);
+  color: var(--font-color);
   text-transform: uppercase;
 }
 
@@ -50,7 +50,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 123%;
-  color: var(--black);
+  color: var(--font-color);
   text-transform: uppercase;
 }
 
@@ -60,7 +60,7 @@ body {
   font-size: 32px;
   letter-spacing: 0.02em;
   line-height: 125%;
-  color: var(--black);
+  color: var(--font-color);
   text-transform: uppercase;
 }
 
@@ -70,7 +70,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black)
+  color: var(--font-color);
 }
 
 .body-text-medium {
@@ -79,7 +79,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--font-color);
 }
 
 .caption {
@@ -88,7 +88,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 156%;
-  color: var(--black);
+  color: var(--font-color);
   text-transform: uppercase;
 }
 

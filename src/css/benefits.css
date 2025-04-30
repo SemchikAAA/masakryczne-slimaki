@@ -8,6 +8,9 @@
   align-items: center;
   margin-bottom: 16px;
 }
+.theme-dark .benefits-body-icon {
+  background-color: #204136;
+}
 
 .benefits-list {
   gap: 32px;
