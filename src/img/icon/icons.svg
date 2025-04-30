@@ -42,6 +42,9 @@
 <path fill="none" stroke="#e4e5e6" style="stroke: var(--color3, #e4e5e6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M21.333 16h-10.667"></path>
 <path fill="none" stroke="#e4e5e6" style="stroke: var(--color3, #e4e5e6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M14.667 20l-4-4 4-4"></path>
 </symbol>
+<symbol id="loadmore-line" viewBox="0 0 32 32">
+<path fill="#00b068" style="fill: var(--color1, #00b068)" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-32zM16 32l1872 0v-32l-1872-0v32z"></path>
+</symbol>
 <symbol id="icon-arrowright" viewBox="0 0 32 32">
 <path fill="none" stroke="#e4e5e6" style="stroke: var(--color3, #e4e5e6)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M5.333 0.333h21.333c2.761 0 5 2.239 5 5v21.333c0 2.761-2.239 5-5 5h-21.333c-2.761 0-5-2.239-5-5v-21.333c0-2.761 2.239-5 5-5z"></path>
 <path fill="none" stroke="#292929" style="stroke: var(--color4, #292929)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M10.667 16h10.667"></path>
@@ -58,6 +61,10 @@
 </symbol>
 <symbol id="icon-message" viewBox="0 0 32 32">
 <path fill="none" stroke="#00b068" style="stroke: var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M30.182 8.364v15.273c0 0.868-0.345 1.7-0.959 2.314s-1.446 0.959-2.314 0.959h-21.818c-0.868 0-1.7-0.345-2.314-0.959s-0.959-1.446-0.959-2.314v-15.273M30.182 8.364c0-0.868-0.345-1.7-0.959-2.314s-1.446-0.959-2.314-0.959h-21.818c-0.868 0-1.7 0.345-2.314 0.959s-0.959 1.446-0.959 2.314M30.182 8.364v0.353c0 0.559-0.143 1.108-0.415 1.596s-0.665 0.898-1.141 1.191l-10.909 6.713c-0.516 0.318-1.11 0.486-1.716 0.486s-1.2-0.168-1.716-0.486l-10.909-6.711c-0.476-0.293-0.869-0.703-1.141-1.191s-0.415-1.037-0.415-1.596v-0.355"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
 </symbol>
 </defs>
 </svg>

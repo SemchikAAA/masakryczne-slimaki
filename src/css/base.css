@@ -37,9 +37,9 @@ body {
 .header-first {
   font-family: var(--font-family-impact);
   font-size: 64px;
-  font-weight: normal;
-  letter-spacing: 1.8px;
-  line-height: 80px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 125%;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -47,9 +47,9 @@ body {
 .header-second {
   font-family: var(--font-family-impact);
   font-size: 52px;
-  font-weight: normal;
-  letter-spacing: 1.8px;
-  line-height: 64px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 123%;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -58,8 +58,8 @@ body {
   font-family: var(--font-family-primary);
   font-weight: var(--medium);
   font-size: 32px;
-  letter-spacing: 0.5px;
-  line-height: 40px;
+  letter-spacing: 0.02em;
+  line-height: 125%;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -68,17 +68,17 @@ body {
   font-family: var(--font-family-primary);
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  color: var(--black);
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black)
 }
 
 .body-text-medium {
   font-family: var(--font-family-primary);
   font-weight: var(--medium);
   font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
   color: var(--black);
 }
 
@@ -86,8 +86,8 @@ body {
   font-family: var(--font-family-primary);
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: 0.5px;
-  line-height: 28px;
+  letter-spacing: 0.03em;
+  line-height: 156%;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -95,22 +95,25 @@ body {
 @media only screen and (min-width: 768px) {
   .header-first {
     font-size: 136px;
-    line-height: 156px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
   }
 
   .header-second {
     font-size: 108px;
-    line-height: 124px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
   }
 
   .header-third {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
   }
 
   .caption {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 160%;
   }
 }
 
