@@ -68,6 +68,10 @@
   background: var(--lightgrey);
   margin-left: auto;
 }
+
+.theme-dark .site-cont a {
+  background: #2a2d32;
+}
 .site-cont a:hover {
   background-color: var(--hover-grey);
 }
