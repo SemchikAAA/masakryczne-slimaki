@@ -3,14 +3,14 @@ import "accordion-js/dist/accordion.min.css";
 
 document.addEventListener('DOMContentLoaded', function () {
     const accordion = new Accordion('.accordion_list', {
-        duration: 300, 
+        duration: 600, 
         showMultiple: false,
         openOnInit: [0],
         elementClass: 'accordion_item',
         triggerClass: 'accordion_header',
         panelClass: 'answer',
         activeClass: 'open',
-        collapse: false,
+        collapse: true,
     })
 
     const accordionBtns = document.querySelectorAll('.accordion_btn')

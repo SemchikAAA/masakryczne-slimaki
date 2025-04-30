@@ -42,11 +42,15 @@
   min-height: 48px;
   background-color: var(--lightgrey);
 }
+.theme-dark .input_email {
+  background-color: #2a2d32;
+  color: var(--white);
+}
 .input_email:focus-visible {
   outline: none;
 }
 .input_email::placeholder {
-  color: var(--black);
+  color: var(--font-color);
 }
 
 .input_message {
@@ -60,11 +64,15 @@
   resize: none;
   background-color: var(--lightgrey);
 }
+
+.theme-dark .input_message {
+  background-color: #2a2d32;
+}
 .input_message:focus-visible {
   outline: none;
 }
 .input_message::placeholder {
-  color: var(--black);
+  color: var(--font-color);
 }
 
 .wt_sbm_btn {
@@ -118,6 +126,11 @@
   height: 328px;
   background-color: var(--white);
 }
+
+.theme-dark .wt-modal {
+  background-color: #2a2d32;
+  color: var(--font-color);
+}
 .thank-you {
   font-size: 20px;
   line-height: 1.6;
@@ -139,6 +152,11 @@
   position: absolute;
   stroke: var(--black);
 }
+.theme-dark .wt-close-btn {
+  background-color: #2a2d32;
+  stroke: var(--font-color);
+}
+
 .no-scroll {
   overflow: hidden;
 }
