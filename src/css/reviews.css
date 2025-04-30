@@ -8,6 +8,9 @@
   min-height: 296px;
   background-color: var(--lightgrey);
 }
+.theme-dark .swiper-slide {
+  background-color: #2a2d32;
+}
 .swiper-slide p {
   flex-grow: 1;
 }
@@ -52,18 +55,34 @@
 .nav-button:focus {
   background-color: var(--lightgrey);
 }
+
+.theme-dark .nav-button:hover,
+.nav-button:focus {
+  background-color: #2a2d32;
+}
+
 .nav-button.disabled {
   border-color: var(--lightgrey);
   pointer-events: none;
 }
+
 .icon-arrow {
   stroke: var(--black);
   fill: none;
 }
+.theme-dark .icon-arrow {
+  stroke: #f0f0f0;
+}
 .nav-button.disabled > .icon-arrow {
   stroke: var(--lightgrey);
 }
+.theme-dark .nav-button.disabled > .icon-arrow {
+  stroke: #2a2d32;
+}
 
+.theme-dark .disabled {
+  border-color: #2a2d32;
+}
 @media only screen and (min-width: 768px) {
   .swiper-slide {
     margin-top: 60px;
