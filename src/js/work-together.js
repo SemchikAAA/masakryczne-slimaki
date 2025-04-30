@@ -1,5 +1,7 @@
 import axios from 'axios';
 import 'modern-normalize/modern-normalize.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const backdrop = document.querySelector('.wt-backdrop');
 const form = document.querySelector('.wt_form');
@@ -75,9 +77,16 @@ async function submitData(event) {
     return;
   } catch (error) {
     if (error.request.status === 400) {
-      alert('Будь ласка заповніть форму');
+      iziToast.warning({
+        message: 'Будь ласка заповніть форму',
+        position: 'topRight',
+      });
     } else {
-      alert(`Error ${error.request.status}`);
+      iziToast.error({
+        title: 'Error',
+        message: error.request.status,
+        position: 'topRight',
+      });
     }
   }
 }

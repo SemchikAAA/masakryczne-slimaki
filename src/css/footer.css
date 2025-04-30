@@ -28,6 +28,11 @@
   max-width: 320px;
 }
 
+.ft-social-link:hover,
+.ft-social-link:focus {
+  color: var(--accent-green);
+}
+
 .ft-last {
   margin: 0 auto;
   max-width: 197px;
