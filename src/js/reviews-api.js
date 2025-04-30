@@ -8,6 +8,8 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const list = document.querySelector('.swiper-wrapper');
 
+prevButton.classList.add('disabled');
+
 fetchReviews();
 
 async function fetchReviews() {

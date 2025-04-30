@@ -53,12 +53,15 @@
   background-color: var(--lightgrey);
 }
 .nav-button.disabled {
-  opacity: 0.5;
+  border-color: var(--lightgrey);
   pointer-events: none;
 }
 .icon-arrow {
   stroke: var(--black);
   fill: none;
+}
+.nav-button.disabled > .icon-arrow {
+  stroke: var(--lightgrey);
 }
 
 @media only screen and (min-width: 768px) {
