@@ -15,16 +15,20 @@
   height: auto;
 }
 
+.faq_title {
+  width: 320px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .accordion_list {
   width: 320px;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.faq_title_container {
-  width: 320px;
-  margin-bottom: 40px;
 }
 
 .accordion_item {
@@ -109,12 +113,10 @@
   .faq_title {
     font-size: 108px;
     line-height: 124px;
-  }
-
-  .faq_title_container {
     width: 704px;
     margin-bottom: 60px;
   }
+
 
   .accordion_list {
     width: 704px;
@@ -144,7 +146,7 @@
     background-image: url(../img/background/desktop-decor-bg-4.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+    z-index: 0;
   }
 
   .faq {
@@ -162,16 +164,18 @@
     align-items: flex-start;
     gap: 98px;
     position: relative;
-    height: 1020px;
+    padding-bottom: 0;
   }
 
-  .faq_title_container {
-    width: 520px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: none;
+  .faq_left_column {
+    position: relative;
+    flex: 1;
+    padding-bottom: 408px;
+  }
+
+  .faq_title {
+    width: 520px; 
+    margin-bottom: 230px;
   }
 
   .accordion_list {
