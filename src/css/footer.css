@@ -27,6 +27,9 @@
   gap: 24px;
   max-width: 320px;
 }
+.ft-social-link {
+    transition: color 0.3s ease;
+}
 
 .ft-social-link:hover,
 .ft-social-link:focus {
