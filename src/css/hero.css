@@ -7,7 +7,7 @@
 }
 
 .header-first {
-    margin-top: 112px;
+  margin-top: 112px;
 }
 
 .hero-link-wrapper {
@@ -19,24 +19,27 @@
 }
 
 .hero-image-wrapper {
-    display: none;
+  display: none;
 }
 
 .hero-link-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 165px;
-    height: 100%;
-    background-color: rgba(0, 195, 138, 0.2);
-    border-radius: 16px;
-    z-index: 1;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 165px;
+  height: 100%;
+  background-color: rgba(0, 195, 138, 0.2);
+  border-radius: 16px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+.theme-dark .hero-link-bg {
+  background-color: #14c57c;
 }
 
 .hero-link-wrapper:hover .hero-link-bg,
 .hero-link-wrapper:focus-within .hero-link-bg {
-    background-color: var(--accent-green);
+  background-color: var(--accent-green);
 }
 
 .hero-link {
@@ -45,50 +48,52 @@
     align-items: center;
     gap: 8px;
     text-decoration: none;
+   color: var(--font-color);
     z-index: 2;
 }
 
 .arrow {
-    font-size: 20px;
-    color: var(--accent-green);
+  font-size: 20px;
+  color: var(--accent-green);
 }
 
 .hero-description {
-    margin-top: 40px;
-    margin-bottom: 56px;
-    text-align: justify;
+  margin-top: 40px;
+  text-align: justify;
+  margin-bottom: 56px;
 }
-
 .hero-social-link {
     padding: 48px 0;
     margin-top: 16px;
     background-color: var(--lightgrey);
     text-align: center;
 }
+.theme-dark .hero-social-link {
+  background-color: #2a2d32; 
+}
 
 .hero-social-link ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .hero-social {
-
+  color: var(--font-color);
     transition: color 0.3s ease;
 }
 
 .hero-social:hover,
 .hero-social:focus {
-    color: var(--accent-green);
+  color: var(--accent-green);
 }
 
 @media (min-width: 768px) {
-
-    .header-first {
+  .header-first {
         font-size: 136px;
         line-height: 156px;
     }
