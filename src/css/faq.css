@@ -93,11 +93,6 @@
 }
 
 @media (min-width: 768px) {
-  .faq_title {
-    font-size: 108px;
-    line-height: 124px;
-  }
-
   .faq_title_container {
     width: 704px;
     margin-bottom: 60px;
