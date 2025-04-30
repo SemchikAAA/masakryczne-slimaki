@@ -1,13 +1,21 @@
 /* Mobile first */
 .container {
   min-width: 320px;
-  max-width: 375px;
+  max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .section {
   padding: 40px 0;
+}
+
+.section:first-of-type {
+  padding-top: 0;
+}
+
+.section:last-of-type {
+  padding-bottom: 0;
 }
 
 /* Tablet */
