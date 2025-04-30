@@ -28,7 +28,6 @@
   max-width: 320px;
 }
 .ft-social-link {
-    color: var(--font-color);
     transition: color 0.3s ease;
 }
 
