@@ -57,7 +57,7 @@
   width: 24px;
   height: 24px;
 }
-.site-cont button {
+.site-cont a {
   display: flex;
   gap: 12px;
   width: 125px;
@@ -67,13 +67,16 @@
   background: var(--lightgrey);
   margin-left: auto;
 }
-.site-cont button:hover {
+.site-cont a:hover {
   background-color: var(--hover-grey);
 }
 
 @media only screen and (min-width: 767px) {
   .pj-header {
     margin-bottom: 60px;
+  }
+  .projects-list {
+    gap: 60px;
   }
   .pj-item-cont {
     max-width: 704px;
@@ -89,9 +92,6 @@
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
-  }
-  .projects-list {
-    gap: 60px;
   }
   .site-cont {
     flex-direction: row;
@@ -112,6 +112,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .projects-container {
+    padding: 0 136px;
+  }
   .pj-header {
     margin-bottom: 80px;
   }
@@ -123,8 +126,5 @@
   }
   .load-more-btn {
     margin-top: 80px;
-  }
-  .projects-container {
-    padding: 0 136px;
   }
 }
