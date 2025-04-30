@@ -50,7 +50,6 @@
   border-top: none;
   width: 320px;
   gap: 24px;
-
 }
 .theme-dark .accordion_item.open {
   background-color: #204136;
@@ -86,14 +85,11 @@
   background-color: transparent;
   text-align: left;
   cursor: pointer;
+  margin: 0;
+  transition: transform 0.3s ease;
 }
 .theme-dark .accordion_btn svg {
   stroke: #f0f0f0;
-}
-
-.accordion_btn {
-  margin: 0;
-  transition: transform 0.3s ease;
 }
 
 .accordion_item.open .accordion_btn {
@@ -127,7 +123,6 @@
     width: 600px;
   }
 }
-
 
 @media (min-width: 1280px) {
   .decor_bg {
@@ -180,6 +175,6 @@
   }
 
   .accordion_item.open {
-    max-height:min-content;
+    max-height: min-content;
   }
 }

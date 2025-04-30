@@ -6,14 +6,12 @@
   margin-bottom: 40px;
   text-align: center;
 }
-.projects-container {
-  margin-bottom: 40px;
-}
 .projects-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  margin-bottom: 40px;
 }
 .pj-item-cont {
   max-width: 320px;
@@ -86,6 +84,7 @@
   }
   .projects-list {
     gap: 60px;
+    margin-bottom: 60px;
   }
   .pj-item-cont {
     max-width: 704px;
@@ -113,7 +112,6 @@
     font-size: 20px;
     line-height: 160%;
     height: 56px;
-    margin-top: 60px;
   }
   .load-more-btn::after {
     width: 117px;
@@ -132,8 +130,6 @@
   }
   .projects-list {
     gap: 80px;
-  }
-  .load-more-btn {
-    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
