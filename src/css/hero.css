@@ -181,14 +181,10 @@
     }
 
     .hero-link {
-        position: relative;
         z-index: 1;
-        padding: 16px 32px;
         color: var(--color-dark);
-        text-decoration: none;
-        font-weight: 400;
     }
-
+  
     .hero-description {
         margin-bottom: 0;
         width: 588px;
