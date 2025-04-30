@@ -151,7 +151,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 80px 20px;
     position: relative;
   }
 
@@ -163,8 +162,7 @@
     align-items: flex-start;
     gap: 98px;
     position: relative;
-    height: auto;
-    min-height: 91vh;
+    height: 1020px;
   }
 
   .faq_title_container {
@@ -173,6 +171,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: none;
   }
 
   .accordion_list {
@@ -183,7 +182,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 388px;
+    margin-top: 276px;
   }
 
   .accordion_item.open {
