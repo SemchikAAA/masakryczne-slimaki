@@ -30,7 +30,6 @@ html {
     letter-spacing: 0.06em;
     font-family: var(--font-family-impact);
     color: var(--font-color);
-    color: var(--black);
     width: 180px;
     z-index: 1001;
 }
