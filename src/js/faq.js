@@ -7,6 +7,7 @@ window.addEventListener('resize', () => {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function () {
     const accordion = new Accordion('.accordion_list', {
         duration: 600, 
