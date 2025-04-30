@@ -77,6 +77,9 @@
   text-align: left;
   cursor: pointer;
 }
+.theme-dark .accordion_btn svg {
+  stroke: #f0f0f0;
+}
 
 .accordion_btn {
   margin: 0;
