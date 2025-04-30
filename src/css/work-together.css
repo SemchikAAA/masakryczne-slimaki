@@ -207,7 +207,6 @@
     background-position: top right;
     pointer-events: none;
     z-index: -1;
-    filter: blur(4.7280731201171875px);
   }
 
   .wt_content {
