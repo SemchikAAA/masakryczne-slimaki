@@ -1,0 +1,78 @@
+.swiper-slide {
+  margin-top: 40px;
+  display: flex !important;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 32px;
+  width: 320px;
+  min-height: 296px;
+  background-color: var(--lightgrey);
+}
+.swiper-slide p {
+  flex-grow: 1;
+}
+.reviewer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+  background-color: var(--light-accent);
+}
+.reviewer-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.navigation-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  justify-content: flex-end;
+}
+.nav-button {
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--lightgrey);
+}
+.nav-button.disabled {
+  border-color: var(--lightgrey);
+  pointer-events: none;
+}
+.icon-arrow {
+  stroke: var(--black);
+  fill: none;
+}
+.nav-button.disabled > .icon-arrow {
+  stroke: var(--lightgrey);
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    margin-top: 60px;
+    min-height: 248px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-slide {
+    margin-top: 80px;
+  }
+}
