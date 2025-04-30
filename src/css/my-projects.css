@@ -30,6 +30,7 @@
   padding: 12px 24px;
   height: 52px;
   margin: 0 auto;
+  background-color: var(--color-secondary);
 }
 .load-more-btn:hover {
   color: var(--accent-green);
@@ -69,6 +70,10 @@
 }
 .site-cont a:hover {
   background-color: var(--hover-grey);
+}
+
+.theme-dark .site-cont a:hover {
+  background-color: #3b3f45;
 }
 
 @media only screen and (min-width: 767px) {
