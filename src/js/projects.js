@@ -58,6 +58,8 @@ const loadMoreBtn = document.querySelector('.load-more-btn');
 let currentIndex = 0;
 const cardsPerPage = 3;
 
+import pathIcons from '../img/icon/icons.svg';
+
 function getMarkup(projects) {
   return projects.map(({ image, img2x, title }) => {
     return `<li>
@@ -83,7 +85,7 @@ function getMarkup(projects) {
                     VISIT
                     <div class="visit-arrow">
                       <svg width="18" height="18">
-                        <use href="img/icon/icons.svg#icon-visit-icon"></use>
+                        <use href="${pathIcons}#icon-visit-icon"></use>
                       </svg>
                     </div>
                     </a>
