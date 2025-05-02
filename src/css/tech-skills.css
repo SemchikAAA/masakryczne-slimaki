@@ -94,6 +94,9 @@
 .dot.black {
   background: var(--black);
 }
+.theme-dark .dot.black {
+  background: var(--white);
+}
 
 @keyframes scroll-fast {
   0% {
