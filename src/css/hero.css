@@ -42,7 +42,7 @@
   transition: background-color 0.3s ease;
 }
 .theme-dark .hero-link-bg {
-  background-color: var(--accet-green-dt);
+  background-color: var(--hover-green);
 }
 
 .hero-link-wrapper:hover .hero-link-bg,
@@ -52,7 +52,7 @@
 
 .theme-dark .hero-link-wrapper:hover .hero-link-bg,
 .hero-link-wrapper:focus-within .hero-link-bg {
-  background-color: var(--hover-green);
+  background-color: var(--accet-green-dt);
 }
 
 .hero-link {
