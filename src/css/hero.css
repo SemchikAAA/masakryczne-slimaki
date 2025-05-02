@@ -36,7 +36,7 @@
   right: 0;
   width: 165px;
   height: 100%;
-  background-color: rgba(0, 195, 138, 0.2);
+  background-color: var(--light-accent);
   border-radius: 16px;
   z-index: 1;
   transition: background-color 0.3s ease;
