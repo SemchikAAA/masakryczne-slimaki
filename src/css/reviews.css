@@ -9,7 +9,7 @@
   background-color: var(--lightgrey);
 }
 .theme-dark .swiper-slide {
-  background-color: #2a2d32;
+  background-color: var(--charcoal-dt);
 }
 .swiper-slide p {
   flex-grow: 1;
@@ -58,7 +58,7 @@
 
 .theme-dark .nav-button:hover,
 .nav-button:focus {
-  background-color: #2a2d32;
+  background-color: var(--black);
 }
 .theme-dark .nav-button {
   border-color: var(--white);
@@ -79,11 +79,11 @@
   stroke: var(--lightgrey);
 }
 .theme-dark .nav-button.disabled > .icon-arrow {
-  stroke: #2a2d32;
+  stroke: var(--black);
 }
 
 .theme-dark .disabled {
-  border-color: #2a2d32;
+  border-color: var(--black);
 }
 @media only screen and (min-width: 768px) {
   .swiper-slide {

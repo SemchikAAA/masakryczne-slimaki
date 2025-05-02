@@ -37,7 +37,7 @@
 }
 
 .theme-dark .marquee-container.top {
-  background: #204136;
+  background: var(--dark-accet-dt);
 }
 
 .marquee-container.bottom {
@@ -46,7 +46,7 @@
 }
 
 .theme-dark .marquee-container.bottom {
-  background: #2a2d32;
+  background: var(--charcoal-dt);
 }
 
 .marquee-container.angled {

@@ -1,7 +1,7 @@
 /* #region phone about-me */
 
 .about-me-title-span {
-  color: #00b068;
+  color: var(--accent-green);
 }
 
 .about-me-img {
@@ -55,7 +55,7 @@
   top: 10px;
   width: 4px;
   height: 4px;
-  background-color: #00b068;
+  background-color: var(--accent-green);
   border-radius: 1px;
 }
 

@@ -42,7 +42,7 @@
   background-color: var(--lightgrey);
 }
 .theme-dark .input_email {
-  background-color: #2a2d32;
+  background-color: var(--charcoal-dt);
   color: var(--white);
 }
 .input_email:focus-visible {
@@ -65,7 +65,7 @@
 }
 
 .theme-dark .input_message {
-  background-color: #2a2d32;
+  background-color: var(--charcoal-dt);
 }
 .input_message:focus-visible {
   outline: none;
@@ -128,7 +128,7 @@
 }
 
 .theme-dark .wt-modal {
-  background-color: #2a2d32;
+  background-color: var(--charcoal-dt);
   color: var(--font-color);
 }
 .thank-you {
@@ -153,7 +153,7 @@
   stroke: var(--black);
 }
 .theme-dark .wt-close-btn {
-  background-color: #2a2d32;
+  background-color: var(--charcoal-dt);
   stroke: var(--font-color);
 }
 
