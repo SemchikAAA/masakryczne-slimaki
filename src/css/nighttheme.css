@@ -59,19 +59,19 @@
 }
 
 input:checked + .slider {
-  background-color: #292929;
+  background-color: var(--black);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #292929;
+  box-shadow: 0 0 1px var(--black);
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(16px);
-  background: #292929;
-  box-shadow: 8px 0px 0px 0px #14c57c; /* Style for moon */
+  background: var(--black);
+  box-shadow: 8px 0px 0px 0px var(--accet-green-dt); /* Style for moon */
   background-repeat: no-repeat;
   background-position: center;
 }

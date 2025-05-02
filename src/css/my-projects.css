@@ -71,7 +71,7 @@
 }
 
 .theme-dark .site-cont a {
-  background: #2a2d32;
+  background: var(--charcoal-dt);
 }
 .site-cont a:hover,
 .site-cont a:focus {
@@ -80,7 +80,7 @@
 
 .theme-dark .site-cont a:hover,
 .theme-dark .site-cont a:focus {
-  background-color: #3b3f45;
+  background-color: var(--hover-charcoal-dt);
 }
 
 @media only screen and (min-width: 767px) {

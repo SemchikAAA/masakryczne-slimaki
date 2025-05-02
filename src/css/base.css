@@ -10,13 +10,17 @@
   --font-family-impact: 'Impact', sans-serif;
 
   --black: #292929;
+  --charcoal-dt: #2a2d32;
   --accent-green: #00b068;
   --white: #f0f0f0;
   --lightgrey: #e4e5e6;
   --light-accent: #bcdfd1;
+  --accet-green-dt: #14c57c;
+  --dark-accet-dt: #204136;
   --hover-green: #009156;
   --error: #e74a3b;
   --hover-grey: #bbbbbb;
+  --hover-charcoal-dt: #3b3f45;
 
   --bold: 700;
   --medium: 500;
