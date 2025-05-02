@@ -82,18 +82,23 @@ html {
     height: 100%;
     background-color: var(--white);
     transition: right 0.3s ease;
-    padding-top: 36px;
-    padding-right: 32px;
-    padding-bottom: 36px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     z-index: 999;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/background/mobile-decor-bg-8.png');
   }
-
+  .header-bg {
+    position: absolute;
+    background-image: url('../img/background/mobile-decor-bg-8.png');
+    width: 320px;
+    height: 704px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 60px;
+  }
   .nav-header.active {
     right: 0;
     background-color: var(--color-secondary);
