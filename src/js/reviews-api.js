@@ -1,8 +1,11 @@
 import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+
+Swiper.use([Navigation, Keyboard, Mousewheel]);
 
 const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
